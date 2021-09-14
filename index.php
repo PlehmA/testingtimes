@@ -9,21 +9,23 @@
 </head>
 <body>
 <div class="container">
-<table class="table">
+<table class="table table-sm table-bordered">
     <thead>
-        <tr>
-            <th>Grupo 1</th>
-            <th>Grupo 2</th>
-            <th>Grupo 3</th>
-            <th>Grupo 4</th>
-            <th>Grupo 5</th>
-            <th>Grupo 6</th>
-            <th>Grupo 7</th>
-            <th>Grupo 8</th>
+        <tr class="bg-dark text-white">
+            <th class='text-center'>Grupo 1</th>
+            <th class='text-center'>Grupo 2</th>
+            <th class='text-center'>Grupo 3</th>
+            <th class='text-center'>Grupo 4</th>
+            <th class='text-center'>Grupo 5</th>
+            <th class='text-center'>Grupo 6</th>
+            <th class='text-center'>Grupo 7</th>
+            <th class='text-center'>Grupo 8</th>
         </tr>
     </thead>
     <tbody>
 <?php
+date_default_timezone_set('America/Argentina/Buenos_Aires');
+
 $interval = 1800; // Interval in seconds
 
 $date_first     = date('Y-m-d')." 00:10";
@@ -37,8 +39,12 @@ for ($i = $time_first; $i < $time_second; $i += $interval){
         echo "<tr>";
     }
 $g++;
-
-    echo "<td>".date('H:i', $i)."</td>";
+if (date('H:i') >= date('H:i', $i) &&  date('H:i') <= date('H:i', strtotime('+29 minute' ,$i))) {
+    echo "<td class='text-center'><span class='badge bg-dark'>".date('H:i', $i)."</span></td>";
+}else {
+    echo "<td class='text-center'>".date('H:i', $i)."</td>";
+}
+    
     if ($g == 9) {
         echo "</tr>";
         $g = 1;
