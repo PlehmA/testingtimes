@@ -31,8 +31,8 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 $interval = 1800; // Interval in seconds
 
-$date_first     = date('Y-m-d')." 01:15";
-$date_second    = date('Y-m-d')." 23:45";
+$date_first     = date('Y-m-d')." 01:16";
+$date_second    = date('Y-m-d')." 23:46";
 
 $time_first     = strtotime($date_first);
 $time_second    = strtotime($date_second);
