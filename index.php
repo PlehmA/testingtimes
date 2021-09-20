@@ -12,9 +12,11 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
+            <h3 class="text-center">Hora central</h3>
             <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Africa%2FOuagadougou&show=hour_minute" width="100%" height="90" frameborder="0" seamless></iframe>
         </div>
         <div class="col-sm-6">
+        <h3 class="text-center">Hora Argentina</h3>
         <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FArgentina%2FBuenos_Aires&show=hour_minute" width="100%" height="90" frameborder="0" seamless></iframe>
         </div>
     </div>
