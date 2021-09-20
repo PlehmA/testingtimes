@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablita para los whaches</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4188818814719897"
-     crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-4188818814719897" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body class="bg-dark text-white">
 <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Africa%2FOuagadougou&show=hour_minute" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+        <div class="col-sm-6">
+        <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=America%2FArgentina%2FBuenos_Aires&show=hour_minute" width="100%" height="90" frameborder="0" seamless></iframe>
+        </div>
+    </div>
+
     <h1 class="text-center">Horarios de Argentina</h1>
-<table class="table table-sm table-bordered">
+<table class="table table-sm table-bordered table-responsive">
     <thead>
         <tr class="bg-dark text-white">
             <th class='text-center'>Grupo 1</th>
