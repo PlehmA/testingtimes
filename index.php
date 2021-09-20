@@ -32,7 +32,7 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 $interval = 1800; // Interval in seconds
 
 $date_first     = date('Y-m-d')." 02:12";
-$date_second    = date('Y-m-d')." 24:59";
+$date_second    = date("Y-m-d"." 02:10",strtotime(date('Y-m-d')." + 1 days"));;
 
 $time_first     = strtotime($date_first);
 $time_second    = strtotime($date_second);
