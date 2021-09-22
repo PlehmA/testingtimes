@@ -9,6 +9,7 @@
     <script data-ad-client="ca-pub-4188818814719897" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body class="bg-dark text-white">
+
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
@@ -33,6 +34,8 @@
             <th class='text-center'>Grupo 6</th>
             <th class='text-center'>Grupo 7</th>
             <th class='text-center'>Grupo 8</th>
+            <th class='text-center'>Grupo 9</th>
+            <th class='text-center'>Grupo 10</th>
         </tr>
     </thead>
     <tbody>
@@ -41,7 +44,7 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 $interval = 1800; // Interval in seconds
 
-$date_first     = date('Y-m-d')." 02:12";
+$date_first     = date('Y-m-d')." 02:25";
 $date_second    = date("Y-m-d"." 02:10",strtotime(date('Y-m-d')." + 1 days"));;
 
 $time_first     = strtotime($date_first);
@@ -58,7 +61,7 @@ if (date('H:i') >= date('H:i', $i) &&  date('H:i') <= date('H:i', strtotime('+29
     echo "<td class='text-center text-white'>".date('H:i', $i)."</td>";
 }
     
-    if ($g == 9) {
+    if ($g == 11) {
         echo "</tr>";
         $g = 1;
     }
@@ -67,6 +70,11 @@ if (date('H:i') >= date('H:i', $i) &&  date('H:i') <= date('H:i', strtotime('+29
     </tbody>
 </table>
 </div>
+<script>
+    setInterval(function(){
+        location.reload();
+    }, 60000)
 
+</script>
 </body>
 </html>
