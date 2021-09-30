@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <h1 class="text-center">Horarios de Argentina</h1>
+    <!-- <h1 class="text-center">Horarios de Argentina</h1>
 <table class="table table-sm table-bordered table-responsive">
     <thead>
         <tr class="bg-dark text-white">
@@ -45,7 +45,7 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 $interval = 1800; // Interval in seconds
 
 $date_first     = date('Y-m-d')." 02:25";
-$date_second    = date("Y-m-d"." 02:10",strtotime(date('Y-m-d')." + 1 days"));;
+$date_second    = date("Y-m-d"." 02:30",strtotime(date('Y-m-d')." + 1 days"));;
 
 $time_first     = strtotime($date_first);
 $time_second    = strtotime($date_second);
@@ -68,7 +68,15 @@ if (date('H:i') >= date('H:i', $i) &&  date('H:i') <= date('H:i', strtotime('+29
 }
 ?>
     </tbody>
-</table>
+</table> -->
+
+<img src="images/1629565823896.png" class="img-fluid" alt="">
+<img src="images/1629565840197.png" class="img-fluid" alt="">
+<img src="images/1629565896312.png" class="img-fluid" alt="">
+<img src="images/1629565943956.png" class="img-fluid" alt="">
+<img src="images/1629565971310.png" class="img-fluid" alt="">
+<img src="images/1629566148608.png" class="img-fluid" alt="">
+<img src="images/1629566181755.png" class="img-fluid" alt="">
 </div>
 <script>
     setInterval(function(){
